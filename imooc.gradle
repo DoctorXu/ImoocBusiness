@@ -1,0 +1,35 @@
+ext {
+    android = [
+            applicationId    : 'com.doctor.imoocvoice',
+            compileSdkVersion: 29,
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : '1.0',
+            mutidex          : true,
+            consumer         : 'consumer-rules.pro',
+            testrunner       : 'androidx.test.runner.AndroidJUnitRunner'
+    ]
+
+    depsVersion = [
+            appcompat         : '1.2.0',
+            material          : '1.2.1',
+            junit             : '4.+',
+            extjunit          : '1.1.2',
+            espresso          : '3.3.0',
+            ViewPagerIndicator: '2.4.1',
+            MagicIndicator    : '1.7.0',
+            okhttp            : '4.10.0-RC1'
+    ]
+
+    depsLibs = [
+            appcompat         : "androidx.appcompat:appcompat:${depsVersion.appcompat}",
+            material          : "com.google.android.material:material:${depsVersion.material}",
+            junit             : "junit:junit:${depsVersion.junit}",
+            extjunit          : "androidx.test.ext:junit:${depsVersion.extjunit}",
+            espresso          : "androidx.test.espresso:espresso-core:${depsVersion.espresso}",
+            ViewPagerIndicator: "com.github.JakeWharton:ViewPagerIndicator:${depsVersion.ViewPagerIndicator}",
+            MagicIndicator    : "com.github.hackware1993:MagicIndicator:${depsVersion.MagicIndicator}",
+            okhttp            : "com.squareup.okhttp3:okhttp:${depsVersion.okhttp}"
+    ]
+}
